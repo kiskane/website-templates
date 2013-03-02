@@ -1,0 +1,58 @@
+
+/* USED COLORS ------------------------------------------------- */
+/* BENUTZTE FARBEN --------------------------------------------- */
+
+/*
+white (content-background)               #FFFFFF    weiss
+lightest grey (page background)          #FCFCFC    ganz helles grau
+light grey (h2 background)               #F5F5F5    hellgrau
+grey (h2 top border)                     #D0D0D0    grau
+dark grey (h2 bottom border)             #A0A0A0    dunkelgrau
+darkest grey (visited link color)        #505050    ganz dunkles grau
+black (text color)                       #000000    schwarz
+light green (active link background)     #ADFF2F    hellgruen
+green (hover link background color)      #7FFF00    gruen
+dark green (link color)                  #2F4F4F    dunkelgruen
+*/
+
+/* ############################################################## */
+/* ######################### CONTAINER  ######################### */
+/* ############################################################## */
+
+/* main-container (containing navigation and content) */
+/* Container um navigation und content */
+#main {
+  background-color: #F5F5F5;   /* Hintergrund: hellgrau */
+  clear: both;                 /* Fortsetzung bei Textumfluss: unterhalb */
+  color: #000000;              /* Textfarbe: schwarz */
+  float: left;                 /* Textumfluss: Container links ausrichten */
+  width: 75%;                  /* Breite: 75% */
+}
+
+/* navigation-container */
+/* Container links mit Navigation */
+#navigation {
+  float: left;                 /* Textumfluss: Container links ausrichten */
+  padding: 1em 0;              /* Innenabstand: oben/unten 1em, rechts/links keiner */
+  width: 32%;                  /* Breite: 32% */
+}
+
+/* content-container */
+/* Container mittig mit Inhaltsbereich */
+article {
+  background-color: #FFFFFF;   /* Hintergrund: weiss */
+  border-right: 1px solid #A0A0A0; /* Rahmen rechts: 1px, durchgezogen, dunkelgrau */
+  border-left: 1px solid #A0A0A0;  /* Rahmen links: 1px, durchgezogen, dunkelgrau */
+  color: #000000;              /* Textfarbe: schwarz */
+  float: right;                /* Textumfluss: Container rechts ausrichten */
+  min-height: 50em;            /* Mindesthoehe: 50em */
+  width: 66%;                  /* Breite: 66% */
+}
+
+/* services-container */
+/* Container rechts mit Services */
+aside {
+  float: right;                /* Textumfluss: Container rechts ausrichten */
+  padding: .5em 0;             /* Innenabstand: oben/unten 0.5em, rechts/links keiner */
+  width: 25%;                  /* Breite: 25% */
+}

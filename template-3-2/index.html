@@ -1,20 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!DOCTYPE html>
+<html lang="de">
 <head>
-<title>Template 3.2: Drei-Zeiler mit jeweils zwei Spalten im Kopf-, Inhalts- und Fu&#223;bereich (XHTML 1.0 Strict)</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="author" content="ITIB - Christiane M&#252;ller" />
-<meta name="publisher" content="Christiane M&#252;ller" />
-<meta name="copyright" content="Christiane M&#252;ller" />
-<meta name="description" content="Web-Template. Vorlagen-Datei zur Entwicklung einer Internetseite im XHTML 1.0 Strict-Format" />
-<meta name="keywords" content="XHTML, 1.0, Strict, template, itib" />
-<meta name="content-language" content="de" />
-<meta name="language" content="de" />
-<meta name="robots" content="NOINDEX,NOFOLLOW" />
-<meta name="title" content="Template 3.2: Drei-Zeiler mit jeweils zwei Spalten im Kopf-, Inhalts- und Fu&#223;bereich (XHTML 1.0 Strict)" />
-<link rel="stylesheet" type="text/css" href="format.css" />
-<link rel="shortcut icon" href="favicon.ico" />
+  <title>Template 3.2: Drei-Zeiler mit jeweils zwei Spalten im Kopf-, Inhalts- und Fußbereich (HTML5)</title>
+  <meta charset="utf-8">
+  <meta name="author" content="ITIB - Christiane Müller">
+  <meta name="publisher" content="Christiane Müller">
+  <meta name="copyright" content="Christiane Müller">
+  <meta name="description" content="Web-Template. Vorlagen-Datei zur Entwicklung einer Internetseite im HTML5-Format">
+  <meta name="keywords" content="HTML5, template, itib">
+  <meta name="robots" content="NOINDEX,NOFOLLOW">
+  <link rel="stylesheet" type="text/css" href="../general.css">
+  <link rel="stylesheet" type="text/css" href="screen.css">
+  <link rel="shortcut icon" href="../favicon.ico">
 </head>
 
 <body>
@@ -22,109 +19,116 @@
 <!-- Begin Page-Container -->
 <div id="top">
 
-<!-- Skip-Navigation -->
-<ol id="skip">
- <li><a href="#navigation" title="zur Navigation springen">zur Navigation</a></li>
- <li><a href="#content" title="zum Inhalt springen">zum Inhalt</a></li>
-</ol>
+  <!-- Skip-Navigation -->
+  <ol id="skip">
+    <li><a href="#navigation" title="zur Navigation springen">zur Navigation</a></li>
+    <li><a href="#content" title="zum Inhalt springen">zum Inhalt</a></li>
+  </ol>
 
-<!-- Begin Header-Container -->
-<div id="header">
+  <!-- Begin Header-Container -->
+  <header>
 
-<!-- Begin Left-Header-Container -->
-<div id="header_left">
+    <!-- Begin Left-Header-Container -->
+    <div id="header_left">
+      <p>Hier könnte ein Logo hin.</p>
+      <!-- End Left-Header-Container -->
+    </div>
 
-<div class="container">
-<p>Hier k&#246;nnte ein Logo hin.</p>
-</div>
+    <!-- Begin Content-Header-Container -->
+    <div id="header_content">
+      <p>Hier könnte ein Bildelement hin.</p>
+      <!-- End Content-Header-Container -->
+    </div>
 
-<!-- End Left-Header-Container -->
-</div>
+    <!-- End Header-Container -->
+  </header>
 
-<!-- Begin Content-Header-Container -->
-<div id="header_content">
+  <!-- Begin Main-Container -->
+  <div id="main">
 
-<div class="container">
-<p>Hier k&#246;nnte ein Bildelement hin.</p>
-</div>
+    <!-- Begin Navigation-Container -->
+    <nav id="navigation">
 
-<!-- End Content-Header-Container -->
-</div>
+      <ol id="vertical">
+        <li><a href="index.html">Navigator 1</a></li>
+        <li><a href="index.html">Navigator 2</a></li>
+        <li><a href="index.html">Navigator 3</a></li>
+        <li><a href="index.html">Navigator 4</a></li>
+        <li><strong>Navigator 5</strong></li>
+      </ol>
 
-<!-- End Header-Container -->
-</div>
+      <!-- End Navigation-Container -->
+    </nav>
 
-<!-- Begin Main-Container -->
-<div id="main">
+    <!-- Begin Content-Container -->
+    <article id="content">
 
-<!-- Begin Navigation-Container -->
-<div id="navigation">
+      <h1>Überschrift 1. Ordnung</h1>
 
-<ol id="vertical">
- <li><a href="navi1.html">Navigator 1</a></li>
- <li><a href="navi2.html">Navigator 2</a></li>
- <li><a href="navi3.html">Navigator 3</a></li>
- <li><a href="navi4.html">Navigator 4</a></li>
- <li><strong class="activated">Navigator 5 (aktiv)</strong></li>
-</ol>
+      <nav id="breadcrumb">Sie sind hier: <a href="../index.html">Startseite</a> &gt; Navigator 5</nav>
 
-<!-- End Navigation-Container -->
-</div>
+      <p id="teaser">Hier kann eine Inhaltszusammenfassung hin.</p>
 
-<!-- Begin Content-Container -->
-<div id="content">
+      <h2>Überschrift 2. Ordnung</h2>
 
-<h1>&#220;berschrift 1. Ordnung</h1>
+      <p>Absatz mit Text.</p>
 
-<h2>&#220;berschrift 2. Ordnung</h2>
+      <h3>Überschrift 3. Ordnung</h3>
 
-<p>Absatz mit Text.</p>
+      <p>Absatz mit Text.</p>
 
-<p>Und noch ein Absatz.</p>
+      <ol>
+        <li>Listenelement Nummer 1</li>
+        <li>Listenelement Nummer 2</li>
+        <li>Listenelement Nummer 3</li>
+      </ol>
 
-<p>Dieses <acronym lang="en" xml:lang="en" title="Extensible Hypertext Markup Language">XHTML</acronym>-/<acronym lang="en" xml:lang="en" title="Cascading Style Sheets">CSS</acronym>-<span lang="en" xml:lang="en">Template</span>
-wird zur Verf&#252;gung gestellt auf <code>www.die-barrierefreie-website.de</code>
-- es kann kostenfrei verwendet werden.</p>
+      <p>Und noch ein Absatz.</p>
 
-<p class="up"><a href="#top" title="zum Seitenanfang dieser Seite springen">zum Seitenanfang</a></p>
+      <ul>
+        <li>Listenelement Nummer 1</li>
+        <li>Listenelement Nummer 2</li>
+        <li>Listenelement Nummer 3</li>
+      </ul>
 
-<!-- End Content-Container -->
-</div>
+      <p>Dieses <abbr lang="en" title="Hypertext Markup Language, Version 5">HTML5</abbr>-/
+        <abbr lang="en" title="Cascading Style Sheets">CSS</abbr>-<span lang="en">Template</span>
+        kann kostenfrei verwendet werden.</p>
 
-<!-- End Main-Container -->
-</div>
+      <p class="up"><a href="#top" title="zum Seitenanfang dieser Seite springen">zum Seitenanfang</a></p>
 
-<!-- Begin Footer-Container -->
-<div id="footer">
+      <!-- End Content-Container -->
+    </article>
 
-<!-- Begin Left-Footer-Container -->
-<div id="footer_left">
+    <!-- End Main-Container -->
+  </div>
 
-<div class="container">
-<p>Hier k&#246;nnte ein Verweis zum Impressum hin.</p>
-</div>
+  <!-- Begin Footer-Container -->
+  <aside>
 
-<!-- End Left-Footer-Container -->
-</div>
+    <!-- Begin Left-Footer-Container -->
+    <div id="footer_left">
+      <p>Hier könnte ein Verweis zum Impressum hin.</p>
+      <!-- End Left-Footer-Container -->
+    </div>
 
-<!-- Begin Content-Footer-Container -->
-<div id="footer_content">
+    <!-- Begin Content-Footer-Container -->
+    <div id="footer_content">
+      <p>Hier könnten Adressdaten hin.</p>
+      <!-- End Content-Footer-Container -->
+    </div>
 
-<div class="container">
-<p>Hier k&#246;nnten Adressdaten hin.</p>
-</div>
+    <!-- End Footer-Container -->
+  </aside>
 
-<!-- End Content-Footer-Container -->
-</div>
+  <footer>
+    <p><span lang="en">template generated by</span>
+      <a href="http://www.itib.de" title="zu itib - Informationstechnik in Berlin [Link führt zu externer Seite]"><span
+              class="grossbuchstaben">itib</span> - Informationstechnik in Berlin</a>
+      (Version vom 02. März 2013)</p>
+  </footer>
 
-<!-- End Footer-Container -->
-</div>
-
-<p class="copyright"><span lang="en" xml:lang="en">template generated by</span>
-<a href="http://www.itib.de" title="zu itib - Informationstechnik in Berlin [Link f&#252;hrt zu externer Seite]"><span class="grossbuchstaben">itib</span> - Informationstechnik in Berlin</a>
-(Version vom 05. M&#228;rz 2009)</p>
-
-<!-- End Page-Container -->
+  <!-- End Page-Container -->
 </div>
 
 </body>
