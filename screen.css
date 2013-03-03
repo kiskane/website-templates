@@ -52,6 +52,30 @@ ol#horizontal li:nth-child(2) {
   width: 34%;                  /* Breite: 34% */
 }
 
+p.download {
+  float: right;
+  margin:0 1em;
+  padding: 1em;
+  text-align: right;
+}
+
+p.download a:link,
+p.download a:visited {
+  background: #ADFF2F url(thumbs/download.png) no-repeat 10% 50%;
+  color: #2F4F4F;
+  border-radius: 1em;
+  padding: .5em 1em .5em 2.5em;
+}
+
+p.download a:hover,
+p.download a:active,
+p.download a:focus {
+  background: #7FFF00 url(thumbs/download.png) no-repeat 10% 50%;
+  color: #000000;
+  border-radius: 1em;
+  padding: .5em 1em .5em 2.5em;
+}
+
 article ul {
   list-style: none;            /* Listendarstellung: keine */
   margin: 0 2em;               /* Aussenabstand: oben/unten keiner, rechts/links 2em */
