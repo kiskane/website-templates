@@ -1,13 +1,14 @@
-Layout-Preview:
-
-![website templates preview](templates.png "preview of the 12 website templates")
-
-[Live-Demo](http://kiskane.github.com/website-templates/ "website templates")
-
-Inhaltsverzeichnis / contents:
-
+1. [Preview](#preview)
 1. [Einführung in deutscher Sprache](#website-templates-de)
 2. [introduction in english](#website-templates-en)
+
+# Preview
+
+Link to demo site: [Live-Demo](http://kiskane.github.com/website-templates/ "website templates")
+
+Layout-Preview:
+
+![website templates preview](/thumbs/templates.png "preview of the 12 website templates")
 
 # Website Templates - DE
 
@@ -23,7 +24,7 @@ Je nach Aufbau der Templates entstehen z.B. Bereiche für Logo, Hauptnavigation,
 * Template 1.1: Ein-Zeiler mit zwei Spalten
 * Template 1.2: Ein-Zeiler mit drei Spalten
 
-![Ein-Zeiler-Templates](templates-einzeiler.png "Vorschau der Ein-Zeiler-Templates")
+![Ein-Zeiler-Templates](/thumbs/templates-einzeiler.png "Vorschau der Ein-Zeiler-Templates")
 
 ### Zwei-Zeiler-Templates
 
@@ -35,7 +36,7 @@ Je nach Aufbau der Templates entstehen z.B. Bereiche für Logo, Hauptnavigation,
 * Template 2.6: Zwei-Zeiler mit einer Spalte im Kopf- und drei Spalten im Inhaltsbereich
 * Template 2.7: Zwei-Zeiler mit jeweils drei Spalten im Kopf- und Inhaltsbereich
 
-![Zwei-Zeiler-Templates](templates-zweizeiler.png "Vorschau der Zwei-Zeiler-Templates")
+![Zwei-Zeiler-Templates](/thumbs/templates-zweizeiler.png "Vorschau der Zwei-Zeiler-Templates")
 
 ### Drei-Zeiler-Templates
 
@@ -43,7 +44,7 @@ Je nach Aufbau der Templates entstehen z.B. Bereiche für Logo, Hauptnavigation,
 * Template 3.2: Drei-Zeiler mit jeweils zwei Spalten im Kopf-, Inhalts- und Fußbereich
 * Template 3.3: Drei-Zeiler mit jeweils drei Spalten im Kopf-, Inhalts- und Fußbereich
 
-![Drei-Zeiler-Templates](templates-dreizeiler.png "Vorschau der Drei-Zeiler-Templates")
+![Drei-Zeiler-Templates](/thumbs/templates-dreizeiler.png "Vorschau der Drei-Zeiler-Templates")
 
 ## Hinweise
 
@@ -68,7 +69,7 @@ Depending on the structure of the template there are areas for logo, nain naviga
 * Template 1.1: One row with two columns
 * Template 1.2: One row with three columns
 
-![one row templates](templates-einzeiler.png "preview of the one row templates")
+![one row templates](/thumbs/templates-einzeiler.png "preview of the one row templates")
 
 ### two rows templates
 
@@ -80,7 +81,7 @@ Depending on the structure of the template there are areas for logo, nain naviga
 * Template 2.6: Two rows. One column in first row (header), three columns in second row (content)
 * Template 2.7: Two rows with three columns in each row
 
-![two rows templates](templates-zweizeiler.png "preview of the two rows templates")
+![two rows templates](/thumbs/templates-zweizeiler.png "preview of the two rows templates")
 
 ### three rows templates
 
@@ -88,7 +89,7 @@ Depending on the structure of the template there are areas for logo, nain naviga
 * Template 3.2: Three rows with two columns in each row
 * Template 3.3: Three rows with three columns in each row
 
-![three rows templates](templates-dreizeiler.png "preview of the three rows templates")
+![three rows templates](/thumbs/templates-dreizeiler.png "preview of the three rows templates")
 
 ## notes
 
