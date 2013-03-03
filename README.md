@@ -1,6 +1,6 @@
 1. [Preview](#preview)
-1. [Einführung in deutscher Sprache](#website-templates-de)
-2. [introduction in english](#website-templates-en)
+1. [Einführung in deutscher Sprache](#website-templates---de)
+2. [introduction in english](#website-templates---en)
 
 # Preview
 
