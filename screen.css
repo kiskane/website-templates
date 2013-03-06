@@ -96,3 +96,25 @@ article ul li a:hover, article ul li a:active, article ul li a:focus {
   color: #000000;              /* Textfarbe: schwarz */
   text-decoration: none;       /* Textdekoration: keine */
 }
+
+#marketing {
+  background: #F5F5F5 url("http://www.die-barrierefreie-website.de/images/logo-dibawe.png") no-repeat right bottom;
+  border: 3px solid #ADFF2F;
+  border-radius: 1em;
+  color: #000000;
+  margin: 1em 2em;
+  padding-right: 100px;
+}
+
+#marketing a:link,
+#marketing a:visited {
+  background-color: #F5F5F5;
+  color: #2F4F4F;
+}
+
+#marketing a:hover,
+#marketing a:active,
+#marketing a:focus {
+  background-color: #7FFF00;
+  color: #000000;
+}
