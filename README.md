@@ -50,8 +50,10 @@ Je nach Aufbau der Templates entstehen z.B. Bereiche für Logo, Hauptnavigation,
 
 Für den Produktivbetrieb eines Templates müssen diverse Links im Kopfbereich angepasst werden:
 
+* Link zur mobile.css (Layout für mobile Geräte mit Bildschirmbreiten bis 480px)
+* Link zur general.css (Layout für alle Bildschirmbreiten ab 481px)
+* Link zur print.css (Layout für Druck)
 * Link zum favicon.ico
-* Link zur general.css
 * Link zur html5shiv.js
 
 
@@ -60,7 +62,7 @@ Für den Produktivbetrieb eines Templates müssen diverse Links im Kopfbereich a
 This project provides 12 website templates that are often needed in practice.
 
 They are composed of rows (horizontal layout) and columns (vertical layout).
-Depending on the structure of the template there are areas for logo, nain navigation, sub navigation, navigation aids, address, content and current news.
+Depending on the structure of the template there are areas e.g. for logo, nain navigation, sub navigation, navigation aids, address, content and current news.
 
 ## available layouts
 
@@ -95,6 +97,8 @@ Depending on the structure of the template there are areas for logo, nain naviga
 
 For productive use you have to adapt various links in the header area:
 
+* anchor to mobile.css (design for mobile devices with a maximal screen width of 480px)
+* anchor to general.css (design for screens greater than 480px)
+* anchor to print.css (design for print layout)
 * anchor to favicon.ico
-* anchor to general.css
 * anchor to html5shiv.js
