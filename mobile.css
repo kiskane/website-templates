@@ -37,19 +37,15 @@ body {
   background-color: #FCFCFC;   /* Hintergrund: ganz helles grau */
   color: #000000;              /* Textfarbe: schwarz */
   font-family: Verdana, Helvetica, Arial, sans-serif; /* Schriftart: Verdana bis sans-serif */
-  margin: auto;                /* Aussenabstand: automatisch */
-  max-width: 59.5em;           /* Maximalbreite: 59.5em */
+  max-width: 480px;            /* Maximalbreite: 480px */
 }
 
 /* page-container including header-, main- and footer-container */
 /* Seiten-Container mit Kopf-, Inhalts- und Fussbereich */
 #top {
   background-color: #FFFFFF;   /* Hintergrund: weiss */
-  border-right: 1px solid #A0A0A0;  /* Rahmen rechts: 1px, durchgezogen, dunkelgrau */
-  border-left: 1px solid #A0A0A0;   /* Rahmen links: 1px, durchgezogen, dunkelgrau */
-  box-shadow: 2px 2px 2px #A0A0A0;  /* Rahmenschattierung: 2px, dunkelgrau */
   color: #000000;              /* Textfarbe: schwarz */
-  font-size: 80%;              /* Schriftgroesse: 80% */
+  font-size: 100.01%;          /* Schriftgroesse: 100% */
   line-height: 1.5em;          /* Zeilenhohe: 1.5fach */
 }
 
@@ -84,40 +80,21 @@ a:hover, a:active, a:focus {
 /* Skip-Navigation ('hidden' skip-anchors) */
 /* Skip-Navigation ('unsichtbare' Sprungmarken) */
 ol#skip li {
-  display: inline;             /* Anzeigeart: Inline, Element erzeugt keine neue Zeile */
-  list-style: none;            /* Listendarstellung: keine */
-}
-
-ol#skip a:link,
-ol#skip a:visited,
-ol#skip a:hover {
-  left: -400em;                /* Positionierung: links ausserhalb des Anzeige-Bereiches */
-  position: absolute;          /* Positionierung: absolut */
-}
-
-ol#skip a:active,
-ol#skip a:focus {
-  left: 0;                     /* Positionierung: links oben */
-  text-align: center;          /* Horizontale Ausrichtung: zentriert */
-  width: 20em;                 /* Breite: 20em */
+  display: none;               /* Anzeigeart: ausgeblendet */
 }
 
 /* ###################### Navigationsliste ##################### */
 
-/* vertical navigation-list */
-/* Liste fuer vertikale Navigationsleiste */
+/* navigation-list */
+/* Liste fuer Navigationsleiste */
+ol#horizontal,
 ol#vertical {
   list-style: none;            /* Listendarstellung: keine */
 }
 
-/* item in the vertical navigation-list */
-/* Einzelne Listenpunkte in der vertikalen Navigationsleiste */
-ol#vertical li {
-  letter-spacing: .1em;        /* Zeichenabstand: 0.1em */
-}
-
-/* active item in the vertical navigation-list */
-/* Aktiver Listenpunkt in der vertikalen Navigationsleiste */
+/* active item in the navigation-list */
+/* Aktiver Listenpunkt in der Navigationsleiste */
+ol#horizontal li strong,
 ol#vertical li strong {
   background-color: #ADFF2F;   /* Hintergrund: hellgruen */
   color: #000000;              /* Textfarbe: schwarz */
@@ -127,6 +104,7 @@ ol#vertical li strong {
 
 /* link general in navigation-lists */
 /* Verweis allgemein in Navigationsleisten */
+ol#horizontal li a:link,
 ol#vertical li a:link {
   background-color: #F5F5F5;   /* Hintergrund: hellgrau */
   color: #2F4F4F;              /* Textfarbe: dunkelgruen */
@@ -138,6 +116,7 @@ ol#vertical li a:link {
 
 /* visited link in navigation-lists */
 /* Bereits besuchter Verweis in Navigationsleisten */
+ol#horizontal li a:visited,
 ol#vertical li a:visited {
   background-color: #F5F5F5;   /* Hintergrund: hellgrau */
   color: #505050;              /* Textfarbe: ganz dunkles grau */
@@ -149,6 +128,8 @@ ol#vertical li a:visited {
 
 /* active item in navigation-list if subnavigation exists */
 /* Aktiver Listenpunkt in der Navigationsleiste wenn eine Subnavigation existiert */
+ol#horizontal li.displayed a:link,
+ol#horizontal li.displayed a:visited,
 ol#vertical li.displayed a:link,
 ol#vertical li.displayed a:visited {
   background-color: #ADFF2F;   /* Hintergrund: hellgruen */
@@ -157,73 +138,12 @@ ol#vertical li.displayed a:visited {
 
 /* link on mouse-over, active or focused link in navigation-lists */
 /* Verweis bei Mouse-over, aktiver Verweis und Verweis mit Fokus in Navigationsleisten */
+ol#horizontal li a:hover,
+ol#horizontal li a:active,
+ol#horizontal li a:focus,
 ol#vertical li a:hover,
 ol#vertical li a:active,
 ol#vertical li a:focus {
-  background-color: #7FFF00;   /* Hintergrund: gruen */
-  color: #000000;              /* Textfarbe: schwarz */
-  text-decoration: underline;  /* Textdekoration: unterstrichen */
-}
-
-/* horizontal navigation-list */
-/* Liste fuer horizontale Navigationsleiste */
-ol#horizontal {
-  list-style: none;            /* Listendarstellung: keine */
-}
-
-/* item in the horizontal navigation-list */
-/* Einzelne Listenpunkte in der horizontalen Navigationsleiste */
-ol#horizontal li {
-  float: left;                 /* Textumfluss: alles nachfolgende rechts vom Element */
-  letter-spacing: .1em;        /* Zeichenabstand: 0.1em */
-  text-align: center;          /* Horizontale Ausrichtung: zentriert */
-  width: 20%;                  /* Breite: 20% (Gleichverteilung der fuenf Listenelemente) */
-}
-
-/* active item in the horizontal navigation-list */
-/* Aktiver Listenpunkt in der horizontalen Navigationsleiste */
-ol#horizontal li strong {
-  background-color: #ADFF2F;   /* Hintergrund: hellgruen */
-  color: #000000;              /* Textfarbe: schwarz */
-  display: block;              /* Anzeigeart: Block, Element erzeugt neue Zeile */
-  padding: .5em;               /* Innenabstand: 0.5em */
-}
-
-/* link general in navigation-lists */
-/* Verweis allgemein in Navigationsleisten */
-ol#horizontal li a:link {
-  background-color: #F5F5F5;   /* Hintergrund: hellgrau */
-  color: #2F4F4F;              /* Textfarbe: dunkelgruen */
-  display: block;              /* Anzeigeart: Block, Element erzeugt neue Zeile */
-  font-weight: bold;           /* Schriftgewicht: fett */
-  padding: .5em;               /* Innenabstand: 0.5em */
-  text-decoration: none;       /* Textdekoration: keine */
-}
-
-/* visited link in navigation-lists */
-/* Bereits besuchter Verweis in Navigationsleisten */
-ol#horizontal li a:visited {
-  background-color: #F5F5F5;   /* Hintergrund: hellgrau */
-  color: #505050;              /* Textfarbe: ganz dunkles grau */
-  display: block;              /* Anzeigeart: Block, Element erzeugt neue Zeile */
-  font-weight: bold;           /* Schriftgewicht: fett */
-  padding: .5em;               /* Innenabstand: 0.5em */
-  text-decoration: none;       /* Textdekoration: keine */
-}
-
-/* active item in navigation-list if subnavigation exists */
-/* Aktiver Listenpunkt in der Navigationsleiste wenn eine Subnavigation existiert */
-ol#horizontal li.displayed a:link,
-ol#horizontal li.displayed a:visited {
-  background-color: #ADFF2F;   /* Hintergrund: hellgruen */
-  color: #000000;              /* Textfarbe: schwarz */
-}
-
-/* link on mouse-over, active or focused link in navigation-lists */
-/* Verweis bei Mouse-over, aktiver Verweis und Verweis mit Fokus in Navigationsleisten */
-ol#horizontal li a:hover,
-ol#horizontal li a:active,
-ol#horizontal li a:focus {
   background-color: #7FFF00;   /* Hintergrund: gruen */
   color: #000000;              /* Textfarbe: schwarz */
   text-decoration: underline;  /* Textdekoration: unterstrichen */
@@ -241,19 +161,28 @@ ol#vertical li.displayed a:focus {
   color: #000000;              /* Textfarbe: schwarz */
 }
 
+#navigation a,
+#navigation strong,
+#subnavigation a,
+#subnavigation strong {
+  border: 1px solid #2F4F4F;
+  border-radius: 1em;
+  margin: .5em 1em;
+  text-align: center;
+}
+
 /* ##################### Textauszeichnungen ##################### */
 
 /* paragraph */
 /* Absatz */
-article p,
-aside p {
-  padding: .5em 2em;           /* Innenabstand: oben/unten 0.5em, rechts/links 2em */
+p {
+  padding: .5em 1em;           /* Innenabstand: oben/unten 0.5em, rechts/links 1em */
 }
 
 /* Brotkrumenpfad */
 article nav#breadcrumb {
   font-size: .85em;            /* Schriftgroesse: 0.85em */
-  padding: .5em 2.5em;         /* Innenabstand: oben/unten 0.5em, rechts/links 2.5em */
+  padding: .5em 1.4em;         /* Innenabstand: oben/unten 0.5em, rechts/links 1.4em */
 }
 
 /* Teaser: Was auf der Seite zu finden ist (Zusammenfassung) */
@@ -269,8 +198,7 @@ article p.up {
   font-size: .85em;            /* Schriftgroesse: 85% des Elternelementes */
   line-height: 1.3em;          /* Zeilenhohe: 1.3fach */
   margin: 1em .5em;            /* Aussenabstand: oben/unten 1em, rechts/links 0.5em */
-  padding: .2em 1.5em;         /* Innenabstand: oben/unten .2em, rechts/links 1.5em */
-  text-align: right;           /* Horizontale Ausrichtung: rechts */
+  text-align: center;          /* Horizontale Ausrichtung: zentriert */
 }
 
 /* uppercase word */
@@ -287,7 +215,7 @@ article h1 {
   font-size: 1.4em;            /* Schriftgroesse: 1.4em */
   font-weight: bold;           /* Schriftgewicht: fett */
   line-height: 1.5em;          /* Zeilenhohe: 1.5fach */
-  padding: .5em 1.5em;         /* Innenabstand: oben/unten 0.5em, rechts/links 1.5em */
+  padding: .5em .8em;          /* Innenabstand: oben/unten 0.5em, rechts/links 0.8em */
 }
 
 /* heading level 2 */
@@ -300,8 +228,8 @@ article h2 {
   font-size: 1.2em;            /* Schriftgroesse: 1.2em */
   font-weight: bold;           /* Schriftgewicht: fett */
   line-height: 1.3em;          /* Zeilenhohe: 1.3fach */
-  margin: 2em 0 .5em 0;        /* Aussenabstand: oben 2em, unten 0.5em, rechts/links keiner */
-  padding: .5em 1.7em;         /* Innenabstand: oben/unten 0.5em, rechts/links 1.7em */
+  margin: 1em 0 .5em 0;        /* Aussenabstand: oben 1em, unten 0.5em, rechts/links keiner */
+  padding: .5em .9em;          /* Innenabstand: oben/unten 0.5em, rechts/links 0.9em */
 }
 
 /* heading level 3 */
@@ -309,7 +237,7 @@ article h2 {
 article h3 {
   background-color: #FCFCFC;   /* Hintergrund: ganz helles grau */
   font-size: 1em;              /* Schriftgroesse: 1em */
-  padding: .5em 2em;           /* Innenabstand: oben/unten 0.5em, rechts/links 2em */
+  padding: .5em 1em;           /* Innenabstand: oben/unten 0.5em, rechts/links 1em */
 }
 
 /* ########################### Listen ########################### */
@@ -318,14 +246,14 @@ article h3 {
 /* sortierte Liste */
 article ol {
   list-style-type: decimal;    /* Listenzeichen: Dezimalzahl */
-  margin: .5em 4.5em;          /* Aussenabstand: oben/unten 0.5em, rechts/links 4.5em */
+  margin: .5em 1em .5em 3.5em; /* Aussenabstand: oben/unten 0.5em, rechts 1em, links 3.5em */
 }
 
 /* unsorted list */
 /* unsortierte Liste */
 article ul {
   list-style-type: square;     /* Listenzeichen: Quadrat */
-  margin: .5em 4.5em;          /* Aussenabstand: oben/unten 0.5em, rechts/links 4.5em */
+  margin: .5em 1em .5em 3em;   /* Aussenabstand: oben/unten 0.5em, rechts 1em, links 3em */
 }
 
 /* ############################################################## */
@@ -334,9 +262,7 @@ article ul {
 
 footer {
   background-color: #ADFF2F;   /* Hintergrund: hellgruen */
-  clear: both;                 /* Fortsetzung bei Textumfluss: unterhalb */
   color: #000000;              /* Textfarbe: schwarz */
-  float: none;                 /* Textumfluss: keiner */
   font-size: .85em;            /* Schriftgroesse: 85% des Elternelementes */
   padding: .5em 0 0 0;         /* Innenabstand: oben 0.5em, Rest keiner */
   text-align: center;          /* Horizontale Ausrichtung: zentriert */
@@ -354,4 +280,69 @@ footer a:active,
 footer a:focus {
   background-color: #7FFF00;   /* Hintergrund: gruen */
   color: #000000;              /* Textfarbe: schwarz */
+}
+
+/* ############################################################## */
+/* ############### NUR FUER DIE UEBERSICHTSSEITE  ############### */
+/* ############################################################## */
+
+p.download a:link,
+p.download a:visited {
+  background: #ADFF2F url(thumbs/download.png) no-repeat 10px 50%;
+  border-radius: 1em;
+  color: #2F4F4F;
+  display: block;
+  padding: .5em .5em .5em 2em;
+}
+
+p.download a:hover,
+p.download a:active,
+p.download a:focus {
+  background: #7FFF00 url(thumbs/download.png) no-repeat 10px 50%;
+  border-radius: 1em;
+  color: #000000;
+  display: block;
+  padding: .5em .5em .5em 2em;
+}
+
+#marketing {
+  margin-bottom: 1em;
+}
+
+#marketing a:link,
+#marketing a:visited {
+  background-color: #ADFF2F;   /* Hintergrund: hellgrau */
+  border-radius: 1em;
+  color: #2F4F4F;              /* Textfarbe: dunkelgruen */
+  display: block;              /* Anzeigeart: Block, Element erzeugt neue Zeile */
+  padding: .5em;               /* Innenabstand: 0.5em */
+  text-decoration: none;       /* Textdekoration: keine */
+}
+
+#marketing a:hover,
+#marketing a:active,
+#marketing a:focus {
+  background-color: #7FFF00;   /* Hintergrund: gruen */
+  border-radius: 1em;
+  color: #000000;              /* Textfarbe: schwarz */
+  display: block;              /* Anzeigeart: Block, Element erzeugt neue Zeile */
+  padding: .5em;               /* Innenabstand: 0.5em */
+  text-decoration: underline;  /* Textdekoration: unterstrichen */
+}
+
+article h2 + ul {
+  display: inline;             /* Anzeigeart: Inline, Element erzeugt keine neue Zeile */
+  list-style: none;            /* Listendarstellung: keine */
+}
+
+article ul li a:link, article ul li a:visited {
+  display: block;              /* Anzeigeart: Block, Element erzeugt neue Zeile */
+  text-align: center;
+  text-decoration: none;       /* Textdekoration: keine */
+}
+
+article ul li a:hover, article ul li a:active, article ul li a:focus {
+  background-color: #7FFF00;   /* Hintergrund: gruen */
+  color: #000000;              /* Textfarbe: schwarz */
+  text-decoration: none;       /* Textdekoration: keine */
 }
